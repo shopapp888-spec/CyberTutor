@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Phishing Awareness — CyberTutor</title>
+    <title>Social Engineering — CyberTutor</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
@@ -116,9 +116,9 @@
                 <div class="card p-4 mb-4">
                     <div class="d-flex justify-content-between align-items-start">
                         <div>
-                            <h3 class="mb-1 text-light">Phishing Awareness</h3>
-                            <p class="mb-1 text-muted">Pelajari cara mengenali dan menghindari serangan phishing yang umum terjadi di internet.</p>
-                            <small class="text-secondary">Level: Beginner · Durasi: ~45 menit · Tutor: CyberTutor Team</small>
+                            <h3 class="mb-1 text-light">Social Engineering</h3>
+                            <p class="mb-1 text-muted">Pelajari bagaimana penyerang memanipulasi manusia untuk mendapatkan akses informasi sensitif.</p>
+                            <small class="text-secondary">Level: Intermediate · Durasi: ~50 menit · Tutor: CyberTutor Team</small>
                         </div>
                         <div class="text-end">
                             <div class="badge-pts mb-2">+10 Poin Quiz</div>
@@ -130,21 +130,15 @@
 
                     <!-- 🎥 Video Pembelajaran -->
                     <div class="ratio ratio-16x9 mb-4">
-                        <iframe 
-                            src="https://www.youtube.com/embed/UygZfswZgRE?si=X436u90XCWLPn6Pi"
-                            title="Phishing Awareness Video"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen>
-                        </iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Vo1urF6S4u0?si=N4atQeWMDsaYeaQ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
 
                     <h5 class="section-title">Ringkasan Materi</h5>
                     <ul>
-                        <li>Mengerti apa itu phishing dan contoh nyatanya (email, SMS, WA link).</li>
-                        <li>Tanda-tanda pesan phishing: domain palsu, ajakan mendesak, permintaan data sensitif.</li>
-                        <li>Cara verifikasi sumber: cek header email, hover link sebelum klik, gunakan 2FA.</li>
-                        <li>Langkah mitigasi jika terlanjur klik: ubah password, lapor ke layanan terkait, cek transaksi.</li>
+                        <li>Pengenalan konsep Social Engineering dan bagaimana serangan ini memanfaatkan psikologi manusia.</li>
+                        <li>Jenis-jenis serangan: Pretexting, Baiting, Tailgating, dan Impersonation.</li>
+                        <li>Contoh nyata di dunia kerja dan kehidupan sehari-hari.</li>
+                        <li>Cara melindungi diri: verifikasi identitas, tidak membagikan informasi pribadi sembarangan, dan tetap waspada terhadap manipulasi emosional.</li>
                     </ul>
 
                     <h5 class="section-title mt-4">Materi Tambahan</h5>
@@ -153,18 +147,18 @@
                             <a href="#" class="btn btn-outline-light w-100 mb-2">📄 Download Slide</a>
                         </div>
                         <div class="col-md-6">
-                            <a href="#" class="btn btn-outline-light w-100 mb-2">📧 Contoh Email Phishing</a>
+                            <a href="#" class="btn btn-outline-light w-100 mb-2">🎬 Contoh Kasus Video</a>
                         </div>
                     </div>
 
                     <hr>
 
-                    <p class="mb-1">Setelah menyelesaikan materi di atas, kamu dapat mengikuti quiz singkat untuk mendapatkan poin yang bisa ditukar voucher.</p>
+                    <p class="mb-1">Setelah mempelajari materi ini, kamu akan memahami bagaimana serangan berbasis manusia bekerja dan bagaimana menghindarinya.</p>
 
                     <div class="d-flex gap-2 mt-3">
                         @auth
                             <a href="#" class="btn btn-primary">Mulai Kelas</a>
-                            <a href="/quiz/phishing" class="btn btn-outline-light">Ambil Quiz (Trivia)</a>
+                            <a href="/quiz/social-engineering" class="btn btn-outline-light">Ambil Quiz (Trivia)</a>
                         @else
                             <a href="{{ route('login.page') }}" class="btn btn-primary">Masuk untuk Mulai</a>
                             <a href="{{ route('register.page') }}" class="btn btn-outline-light">Daftar Sekarang</a>
@@ -192,19 +186,19 @@
             <div class="col-lg-4">
                 <div class="card p-3 mb-4">
                     <h6 class="section-title mb-2">Ringkasan Cepat</h6>
-                    <p class="small mb-1">Target: Pengguna Internet Umum</p>
+                    <p class="small mb-1">Target: Semua Pengguna</p>
                     <p class="small mb-1">Poin Quiz: <strong>10</strong></p>
-                    <p class="small mb-1">Durasi: <strong>45 Menit</strong></p>
+                    <p class="small mb-1">Durasi: <strong>50 Menit</strong></p>
                     <p class="small mb-0">Sertifikat: <strong>Tidak</strong></p>
                 </div>
 
                 <div class="card p-3 mb-4">
                     <h6 class="section-title mb-2">Langkah Praktis</h6>
                     <ol class="small mb-0">
-                        <li>Jangan klik link mencurigakan.</li>
-                        <li>Periksa domain pengirim dengan teliti.</li>
-                        <li>Gunakan autentikasi dua langkah (2FA).</li>
-                        <li>Laporkan pesan phishing.</li>
+                        <li>Verifikasi identitas orang sebelum memberi informasi.</li>
+                        <li>Jangan mudah percaya dengan rasa urgensi atau ancaman.</li>
+                        <li>Waspadai tamu tak dikenal di area kerja.</li>
+                        <li>Laporkan percobaan manipulasi ke tim keamanan.</li>
                     </ol>
                 </div>
 

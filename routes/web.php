@@ -51,6 +51,17 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/password', function () {
+    return view('password');
+})->middleware(['auth', 'verified'])->name('password');
 
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::get('/quiz/password-security', function () {
+    return view('quiz.password-security');
+    })->name('quiz.password-security');
+Route::post('/quiz/{id}/submit', [QuizController::class, 'submit'])->name('quiz.submit');
+});
 
-
+Route::get('/social-engineering', function () {
+    return view('social-engineering');
+})->middleware(['auth', 'verified'])->name('social-engineering');

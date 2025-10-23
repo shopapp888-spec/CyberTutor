@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Phishing Awareness — CyberTutor</title>
+    <title>Password Security — CyberTutor</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
@@ -111,14 +111,14 @@
     <!-- Content -->
     <div class="container my-5">
         <div class="row g-4">
-            <!-- Left: class main -->
+            <!-- Left: main content -->
             <div class="col-lg-8">
                 <div class="card p-4 mb-4">
                     <div class="d-flex justify-content-between align-items-start">
                         <div>
-                            <h3 class="mb-1 text-light">Phishing Awareness</h3>
-                            <p class="mb-1 text-muted">Pelajari cara mengenali dan menghindari serangan phishing yang umum terjadi di internet.</p>
-                            <small class="text-secondary">Level: Beginner · Durasi: ~45 menit · Tutor: CyberTutor Team</small>
+                            <h3 class="mb-1 text-light">Password Security</h3>
+                            <p class="mb-1 text-muted">Pelajari cara membuat dan mengelola password yang kuat untuk menjaga akunmu tetap aman.</p>
+                            <small class="text-secondary">Level: Beginner · Durasi: ~40 menit · Tutor: CyberTutor Team</small>
                         </div>
                         <div class="text-end">
                             <div class="badge-pts mb-2">+10 Poin Quiz</div>
@@ -131,8 +131,8 @@
                     <!-- 🎥 Video Pembelajaran -->
                     <div class="ratio ratio-16x9 mb-4">
                         <iframe 
-                            src="https://www.youtube.com/embed/UygZfswZgRE?si=X436u90XCWLPn6Pi"
-                            title="Phishing Awareness Video"
+                            src="https://www.youtube.com/embed/3NjQ9b3pgIg?si=HAmN7N-fK2aTUnnJ"
+                            title="Password Security Video"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin"
                             allowfullscreen>
@@ -141,10 +141,11 @@
 
                     <h5 class="section-title">Ringkasan Materi</h5>
                     <ul>
-                        <li>Mengerti apa itu phishing dan contoh nyatanya (email, SMS, WA link).</li>
-                        <li>Tanda-tanda pesan phishing: domain palsu, ajakan mendesak, permintaan data sensitif.</li>
-                        <li>Cara verifikasi sumber: cek header email, hover link sebelum klik, gunakan 2FA.</li>
-                        <li>Langkah mitigasi jika terlanjur klik: ubah password, lapor ke layanan terkait, cek transaksi.</li>
+                        <li>Pentingnya menggunakan password yang kuat dan unik untuk setiap akun.</li>
+                        <li>Kriteria password kuat: kombinasi huruf besar, kecil, angka, dan simbol.</li>
+                        <li>Bahaya menggunakan password yang sama di banyak situs.</li>
+                        <li>Pengenalan password manager untuk menyimpan kata sandi dengan aman.</li>
+                        <li>Mengaktifkan autentikasi dua faktor (2FA) untuk lapisan keamanan tambahan.</li>
                     </ul>
 
                     <h5 class="section-title mt-4">Materi Tambahan</h5>
@@ -153,18 +154,18 @@
                             <a href="#" class="btn btn-outline-light w-100 mb-2">📄 Download Slide</a>
                         </div>
                         <div class="col-md-6">
-                            <a href="#" class="btn btn-outline-light w-100 mb-2">📧 Contoh Email Phishing</a>
+                            <a href="#" class="btn btn-outline-light w-100 mb-2">🔐 Panduan Membuat Password Kuat</a>
                         </div>
                     </div>
 
                     <hr>
 
-                    <p class="mb-1">Setelah menyelesaikan materi di atas, kamu dapat mengikuti quiz singkat untuk mendapatkan poin yang bisa ditukar voucher.</p>
+                    <p class="mb-1">Setelah memahami dasar-dasar keamanan password, ikuti quiz berikut untuk menguji pengetahuanmu.</p>
 
                     <div class="d-flex gap-2 mt-3">
                         @auth
                             <a href="#" class="btn btn-primary">Mulai Kelas</a>
-                            <a href="/quiz/phishing" class="btn btn-outline-light">Ambil Quiz (Trivia)</a>
+                            <a href="/quiz/password-security" class="btn btn-outline-light">Ambil Quiz (Trivia)</a>
                         @else
                             <a href="{{ route('login.page') }}" class="btn btn-primary">Masuk untuk Mulai</a>
                             <a href="{{ route('register.page') }}" class="btn btn-outline-light">Daftar Sekarang</a>
@@ -192,19 +193,19 @@
             <div class="col-lg-4">
                 <div class="card p-3 mb-4">
                     <h6 class="section-title mb-2">Ringkasan Cepat</h6>
-                    <p class="small mb-1">Target: Pengguna Internet Umum</p>
+                    <p class="small mb-1">Target: Semua Pengguna Internet</p>
                     <p class="small mb-1">Poin Quiz: <strong>10</strong></p>
-                    <p class="small mb-1">Durasi: <strong>45 Menit</strong></p>
+                    <p class="small mb-1">Durasi: <strong>40 Menit</strong></p>
                     <p class="small mb-0">Sertifikat: <strong>Tidak</strong></p>
                 </div>
 
                 <div class="card p-3 mb-4">
                     <h6 class="section-title mb-2">Langkah Praktis</h6>
                     <ol class="small mb-0">
-                        <li>Jangan klik link mencurigakan.</li>
-                        <li>Periksa domain pengirim dengan teliti.</li>
-                        <li>Gunakan autentikasi dua langkah (2FA).</li>
-                        <li>Laporkan pesan phishing.</li>
+                        <li>Gunakan password unik untuk setiap akun.</li>
+                        <li>Aktifkan autentikasi dua faktor (2FA).</li>
+                        <li>Gunakan password manager untuk menyimpan dengan aman.</li>
+                        <li>Perbarui password secara berkala.</li>
                     </ol>
                 </div>
 
