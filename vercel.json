@@ -13,7 +13,7 @@
     "outputDirectory": "public",
     "env": {
         "APP_ENV": "production",
-        "APP_DEBUG": "false",
+        "APP_DEBUG": "true",
         "APP_URL": "https://cybertutor.com",
         "APP_KEY": "base64:jbBpehEBe6E2//FKvXdQzJJPaoXoUysy/Qhy/bGt5jI=",
         "APP_CONFIG_CACHE": "/tmp/config.php",
